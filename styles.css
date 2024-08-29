@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* خلفية بيضاء */
+    color: #333; /* نص داكن للوضوح */
+}
+
+header {
+    background-color: #ADD8E6; /* اللون الأزرق السماوي */
+    color: #000; /* نص أسود لتباين أفضل */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+header .store-description {
+    margin: 10px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+.boxes-container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.instagram-box {
+    background-color: #8A2BE2; /* اللون البنفسجي */
+}
+
+.tiktok-box {
+    background-color: #000; /* اللون الأسود */
+    color: #fff; /* نص أبيض */
+    position: relative;
+}
+
+.tiktok-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 20px solid #f00; /* أحمر في الزاوية العليا اليمنى */
+    border-right: 20px solid transparent;
+}
+
+.tiktok-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #00f; /* أزرق في الزاوية السفلى اليسرى */
+    border-left: 20px solid transparent;
+}
+
+.snapchat-box {
+    background-color: #FFFC00; /* اللون الأصفر */
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #ADD8E6; /* اللون الأزرق السماوي */
+    color: #000; /* نص أسود لتباين أفضل */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-text {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.contact-info {
+    margin: 5px 0;
+    font-size: 14px;
+}
